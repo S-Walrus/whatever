@@ -1,7 +1,8 @@
 from os import environ
 import telebot
 
-TOKEN = environ["SANDWICH_TOKEN"]
+with open("SANDWICH_TOKEN") as f:
+    TOKEN = f.read()
 
 bot = telebot.TeleBot(TOKEN, parse_mode="MARKDOWN")
 owner_id = "@swalrus"

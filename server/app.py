@@ -17,7 +17,7 @@ def send_comment():
 @app.route("/stupid/updateComment", methods=["POST"])
 def update_comment():
     message = str(request.data, encoding="utf-8")
-    bot.log(f"Message was updated to\n```{message}```")
+    bot.log(f"Message was updated\n```{message}```")
     with open("message", "w") as f:
         f.write(message)
     return json.dumps({"response": "ok"})

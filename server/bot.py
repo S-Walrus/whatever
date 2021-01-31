@@ -2,10 +2,10 @@ from os import environ
 import telebot
 
 with open("SANDWICH_TOKEN") as f:
-    TOKEN = f.read()
+    TOKEN = f.read().strip()
 
 bot = telebot.TeleBot(TOKEN, parse_mode="MARKDOWN")
-owner_id = "@swalrus"
+owner_id = "182762538"
 
 
 @bot.message_handler(commands=["start"])
@@ -20,3 +20,4 @@ def _send_help_message(message):
 
 def log(text, priority=2):
     bot.send_message(owner_id, text)
+    bot.send_message()

@@ -20,4 +20,3 @@ def _send_help_message(message):
 
 def log(text, priority=2):
     bot.send_message(owner_id, text)
-    bot.send_message()

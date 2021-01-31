@@ -1,0 +1,36 @@
+html {
+    background-color: black;
+    color: #CBD5E0;
+    font-size: x-large;
+    /* font-family: sans-serif; */
+}
+
+body {
+    max-width: 512px;
+    margin: auto;
+    margin-top: 20vh;
+}
+
+textarea {
+    overflow-x: hidden;
+    height: auto;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font: inherit;
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+    padding: 16px;
+    border-radius: 8px;
+    border-width: 0;
+}
+
+span {
+    color: #3182CE;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+}
